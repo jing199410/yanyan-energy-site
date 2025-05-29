@@ -6,10 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>焱焱國際能源股份有限公司</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script defer src="script.js"></script>
 </head>
 <body>
+  <div id="particles-js"></div>
+
   <header>
+    <img src="assets/logo.png" alt="焱焱國際能源 Logo" class="logo" />
     <h1>焱焱國際能源股份有限公司</h1>
     <nav>
       <a href="#">首頁</a>
@@ -29,18 +33,36 @@
       <div class="product-card">
         <h3>太陽能模組</h3>
         <p>高效率再生能源設備</p>
-        <button onclick="addToCart('太陽能模組')">加入購物車</button>
+        <p>$10000</p>
+        <button onclick="addToCart('太陽能模組', 10000)">加入購物車</button>
       </div>
       <div class="product-card">
         <h3>電力控制器</h3>
         <p>穩定供電與智慧監控</p>
-        <button onclick="addToCart('電力控制器')">加入購物車</button>
+        <p>$8000</p>
+        <button onclick="addToCart('電力控制器', 8000)">加入購物車</button>
       </div>
     </section>
   </main>
 
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="toggleCart()">&times;</span>
+      <h2>購物車內容</h2>
+      <ul id="cart-items"></ul>
+      <p id="cart-total">總金額：$0</p>
+      <button onclick="clearCart()">清空購物車</button>
+    </div>
+  </div>
+
   <footer>
     <p>© 2025 焱焱國際能源股份有限公司。統編：00071943</p>
   </footer>
+
+  <script>
+    particlesJS.load('particles-js', 'assets/particles.json', function() {
+      console.log('particles.js loaded');
+    });
+  </script>
 </body>
 </html>
