@@ -140,3 +140,14 @@ footer {
   cursor: pointer;
   border-radius: 5px;
 }
+
+.solar-info {
+  padding: 3rem 2rem;
+  background-color: #12161c;
+  color: #ffffff;
+  line-height: 1.8;
+}
+.solar-info h2 {
+  color: #00ffcc;
+  margin-bottom: 1rem;
+}
