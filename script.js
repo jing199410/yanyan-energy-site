@@ -27,7 +27,7 @@ function renderCart() {
   const cartTotal = document.getElementById("cart-total");
   cartItems.innerHTML = "";
   let total = 0;
-  cart.forEach((item, index) => {
+  cart.forEach((item) => {
     total += item.price;
     const li = document.createElement("li");
     li.textContent = `${item.name} - $${item.price}`;

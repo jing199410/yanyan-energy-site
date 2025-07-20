@@ -11,7 +11,6 @@
 </head>
 <body>
   <div id="particles-js"></div>
-
   <header>
     <h1>焱焱國際能源股份有限公司</h1>
     <nav>
@@ -25,33 +24,31 @@
   <main>
     <section class="hero">
       <h2>專注能源技術，打造永續未來</h2>
-      <button onclick="window.location.href='#solar-intro'">了解更多</button>
+      <button onclick="document.getElementById('solar-intro').scrollIntoView({ behavior: 'smooth' })">了解更多</button>
     </section>
 
     <section id="solar-intro" class="solar-info">
       <h2>太陽能解決方案</h2>
       <p>
-        在全球邁向淨零碳排的浪潮中，焱焱國際能源致力於提供高效、穩定且經濟的太陽能自用發電系統。
-        我們專為住宅、商辦與工業場域量身打造解決方案，從模組選型、系統規劃到安裝維運，提供一站式服務。
-      </p>
-      <p>
-        無論是屋頂型太陽能、獨立電源套件，或與既有電網併聯使用，我們的產品皆符合國際安規標準，並搭載智慧監控系統，
-        助您即時掌握能源產出與效益，實踐環境永續與能源自主。
+        我們提供高效穩定的太陽能發電設備與智慧管理系統，協助企業與家庭落實能源轉型。
       </p>
     </section>
 
     <section class="products-section">
-      <h2>再生能源</h2>
+      <h2>商品一覽</h2>
       <div class="products">
         <div class="product-card">
           <h3>太陽能模組</h3>
-          <p>高效率再生能源設備</p>
           <p>$10000</p>
           <button onclick="addToCart('太陽能模組', 10000)">加入購物車</button>
         </div>
         <div class="product-card">
+          <h3>電力控制器</h3>
+          <p>$8000</p>
+          <button onclick="addToCart('電力控制器', 8000)">加入購物車</button>
+        </div>
+        <div class="product-card">
           <h3>太陽能家庭套件</h3>
-          <p>含面板、電池與轉換器，一站式安裝</p>
           <p>$50000</p>
           <button onclick="addToCart('太陽能家庭套件', 50000)">加入購物車</button>
         </div>
