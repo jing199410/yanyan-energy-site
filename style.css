@@ -88,3 +88,14 @@ input, textarea {
 .about h2, .contact h2, .checkout h1, .checkout h2 {
   color: #D07258;
 }
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 250px;
+}
+
+.product button {
+  margin-top: auto;
+}
