@@ -40,3 +40,7 @@ function clearCart() {
   localStorage.removeItem("cart");
   renderCart();
 }
+
+function goToCheckout() {
+  window.location.href = "checkout.html";
+}
