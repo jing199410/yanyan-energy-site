@@ -109,7 +109,29 @@
   </div>
 </section>
 
-  <section id="contact">
+  
+<section class="products-section">
+  <h2>太陽能創新商品</h2>
+  <div class="product-list">
+    <div class="product"><h3>太陽能DC轉DC穩壓模組 20A</h3><p>$1280</p><button onclick="addToCart('DC穩壓模組 20A', 1280)">加入購物車</button></div>
+    <div class="product"><h3>太陽能PWM智慧充電控制器 12V/24V</h3><p>$1580</p><button onclick="addToCart('PWM充電控制器', 1580)">加入購物車</button></div>
+    <div class="product"><h3>雙輸出鋰電池保護板（帶太陽能輸入）</h3><p>$890</p><button onclick="addToCart('鋰電池保護板', 890)">加入購物車</button></div>
+    <div class="product"><h3>折疊式太陽能行動電源板 100W</h3><p>$3600</p><button onclick="addToCart('折疊式太陽能板 100W', 3600)">加入購物車</button></div>
+    <div class="product"><h3>太陽能車用雙插點煙器供電模組</h3><p>$1250</p><button onclick="addToCart('車用供電模組', 1250)">加入購物車</button></div>
+    <div class="product"><h3>太陽能旗桿燈（高亮度）</h3><p>$2150</p><button onclick="addToCart('旗桿燈', 2150)">加入購物車</button></div>
+    <div class="product"><h3>太陽能自動感光壁燈</h3><p>$980</p><button onclick="addToCart('自動感光壁燈', 980)">加入購物車</button></div>
+    <div class="product"><h3>太陽能防水庭園串燈（10米）</h3><p>$1890</p><button onclick="addToCart('防水串燈 10米', 1890)">加入購物車</button></div>
+    <div class="product"><h3>太陽能停車場分隔燈</h3><p>$1320</p><button onclick="addToCart('停車場分隔燈', 1320)">加入購物車</button></div>
+    <div class="product"><h3>太陽能水池LED照明套件</h3><p>$2480</p><button onclick="addToCart('水池LED套件', 2480)">加入購物車</button></div>
+    <div class="product"><h3>太陽能監控攝影機（Wi-Fi傳輸）</h3><p>$4580</p><button onclick="addToCart('監控攝影機', 4580)">加入購物車</button></div>
+    <div class="product"><h3>太陽能雞舍加熱保溫組</h3><p>$3200</p><button onclick="addToCart('雞舍保溫組', 3200)">加入購物車</button></div>
+    <div class="product"><h3>太陽能遠端灑水控制裝置</h3><p>$2980</p><button onclick="addToCart('遠端灑水控制', 2980)">加入購物車</button></div>
+    <div class="product"><h3>太陽能USB充電站（可供手機／平板）</h3><p>$1750</p><button onclick="addToCart('USB充電站', 1750)">加入購物車</button></div>
+    <div class="product"><h3>太陽能LED廣告顯示板（室外型）</h3><p>$5220</p><button onclick="addToCart('LED廣告顯示板', 5220)">加入購物車</button></div>
+  </div>
+</section>
+
+<section id="contact">
     <h2>聯絡我們</h2>
     <form action="https://formspree.io/f/moqzyjod" method="POST">
       <label>姓名：<input type="text" name="name" required></label><br/>
@@ -133,5 +155,8 @@
   <footer>
     <p>© 2025 焱焱國際能源股份有限公司．統編：00071943</p>
   </footer>
+
+  <button id="floating-cart" onclick="toggleCart()">🛒</button>
+
 </body>
 </html>
