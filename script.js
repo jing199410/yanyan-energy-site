@@ -35,3 +35,16 @@ document.getElementById("cart-icon").addEventListener("click", function (e) {
   e.preventDefault();
   toggleCart();
 });
+
+function filterProducts(category) {
+  const allLists = document.querySelectorAll('.product-list');
+  allLists.forEach(list => {
+    if (category === 'all') {
+      list.style.display = 'flex';
+    } else if (list.classList.contains(category)) {
+      list.style.display = 'flex';
+    } else {
+      list.style.display = 'none';
+    }
+  });
+}

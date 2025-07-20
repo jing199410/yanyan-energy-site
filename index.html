@@ -34,6 +34,14 @@
   </section>
 
   <section id="products">
+
+  <div class="product-filter">
+    <button onclick="filterProducts('all')">全部商品</button>
+    <button onclick="filterProducts('control')">控制器 / 發電系統</button>
+    <button onclick="filterProducts('light')">照明燈</button>
+    <button onclick="filterProducts('innovation')">太陽能創新商品</button>
+  </div>
+
     <h2>商品服務</h2>
     <div class="product-list">
       <div class="product">
@@ -59,8 +67,8 @@
 
 <section class="products-section">
   <h2>控制器 / 發電系統</h2>
-  <div class="product-list">
-    <div class="product">
+  <div class="product-list control">
+  <div class="product">
       <h3>V-15 300W 12V轉110V 純正弦波逆變器</h3>
       <p>$3200</p>
       <button onclick="addToCart('V-15 純正弦波逆變器', 3200)">加入購物車</button>
@@ -80,8 +88,8 @@
 
 <section class="products-section">
   <h2>照明燈</h2>
-  <div class="product-list">
-    <div class="product">
+  <div class="product-list light">
+  <div class="product">
       <h3>太陽能50W感應投光燈</h3>
       <p>$2200</p>
       <button onclick="addToCart('感應投光燈', 2200)">加入購物車</button>
@@ -112,8 +120,8 @@
   
 <section class="products-section">
   <h2>太陽能創新商品</h2>
-  <div class="product-list">
-    <div class="product"><h3>太陽能DC轉DC穩壓模組 20A</h3><p>$1280</p><button onclick="addToCart('DC穩壓模組 20A', 1280)">加入購物車</button></div>
+  <div class="product-list innovation">
+  <div class="product"><h3>太陽能DC轉DC穩壓模組 20A</h3><p>$1280</p><button onclick="addToCart('DC穩壓模組 20A', 1280)">加入購物車</button></div>
     <div class="product"><h3>太陽能PWM智慧充電控制器 12V/24V</h3><p>$1580</p><button onclick="addToCart('PWM充電控制器', 1580)">加入購物車</button></div>
     <div class="product"><h3>雙輸出鋰電池保護板（帶太陽能輸入）</h3><p>$890</p><button onclick="addToCart('鋰電池保護板', 890)">加入購物車</button></div>
     <div class="product"><h3>折疊式太陽能行動電源板 100W</h3><p>$3600</p><button onclick="addToCart('折疊式太陽能板 100W', 3600)">加入購物車</button></div>
