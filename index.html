@@ -6,92 +6,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>焱焱國際能源股份有限公司</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script defer src="script.js"></script>
 </head>
 <body>
-  <div id="particles-js"></div>
-
   <header>
-    <h1>焱焱國際能源股份有限公司</h1>
+    <h1>焱焱國際能源</h1>
     <nav>
       <a href="#">首頁</a>
-      <a href="#solar-intro">太陽能介紹</a>
+      <a href="#products">商品服務</a>
       <a href="#contact">聯絡我們</a>
       <a href="#" id="cart-icon">🛒</a>
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <h2>專注能源技術，打造永續未來</h2>
-      <button onclick="document.getElementById('solar-intro').scrollIntoView({ behavior: 'smooth' })">了解更多</button>
-    </section>
+  <section class="hero">
+    <h2>專注能源技術，打造永續未來</h2>
+    <button onclick="document.getElementById('products').scrollIntoView({ behavior: 'smooth' })">了解更多</button>
+  </section>
 
-    <section id="solar-intro" class="solar-info">
-      <h2>太陽能解決方案</h2>
-      <p>
-        在全球邁向淨零碳排的浪潮中，焱焱國際能源致力於提供高效、穩定且經濟的太陽能自用發電系統。
-        我們專為住宅、商辦與工業場域量身打造解決方案，從模組選型、系統規劃到安裝維運，提供一站式服務。
-      </p>
-      <p>
-        無論是屋頂型太陽能、獨立電源套件，或與既有電網併聯使用，我們的產品皆符合國際安規標準，並搭載智慧監控系統，
-        助您即時掌握能源產出與效益，實踐環境永續與能源自主。
-      </p>
-    </section>
-
-    <section class="products-section">
-      <h2>發電設備</h2>
-      <div class="products">
-        <div class="product-card">
-          <h3>發電機組</h3>
-          <p>高效能發電系統，適用工業環境</p>
-          <p>$150000</p>
-          <button onclick="addToCart('發電機組', 150000)">加入購物車</button>
-        </div>
+  <section id="products">
+    <h2>商品服務</h2>
+    <div class="product-list">
+      <div class="product">
+        <h3>太陽能模組</h3>
+        <p>高效率再生能源設備</p>
+        <p>$10000</p>
+        <button onclick="addToCart('太陽能模組', 10000)">加入購物車</button>
       </div>
-    </section>
-
-    <section class="products-section">
-      <h2>配電控制</h2>
-      <div class="products">
-        <div class="product-card">
-          <h3>電力控制器</h3>
-          <p>穩定供電與智慧監控</p>
-          <p>$8000</p>
-          <button onclick="addToCart('電力控制器', 8000)">加入購物車</button>
-        </div>
+      <div class="product">
+        <h3>電力控制器</h3>
+        <p>穩定供電與智慧監控</p>
+        <p>$8000</p>
+        <button onclick="addToCart('電力控制器', 8000)">加入購物車</button>
       </div>
-    </section>
-
-    <section class="products-section">
-      <h2>再生能源</h2>
-      <div class="products">
-        <div class="product-card">
-          <h3>太陽能模組</h3>
-          <p>高效率再生能源設備</p>
-          <p>$10000</p>
-          <button onclick="addToCart('太陽能模組', 10000)">加入購物車</button>
-        </div>
-        <div class="product-card">
-          <h3>太陽能家庭套件</h3>
-          <p>含面板、電池與轉換器，一站式安裝</p>
-          <p>$50000</p>
-          <button onclick="addToCart('太陽能家庭套件', 50000)">加入購物車</button>
-        </div>
+      <div class="product">
+        <h3>發電機組</h3>
+        <p>工業用高功率備用電源</p>
+        <p>$150000</p>
+        <button onclick="addToCart('發電機組', 150000)">加入購物車</button>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="contact" class="contact">
-      <h2>聯絡我們</h2>
-      <form action="https://formspree.io/f/moqzyjod" method="POST">
-        <label>姓名：<input type="text" name="name" required></label><br/>
-        <label>Email：<input type="email" name="_replyto" required></label><br/>
-        <label>訊息內容：<br/><textarea name="message" rows="5" required></textarea></label><br/>
-        <button type="submit">送出訊息</button>
-      </form>
-    </section>
-  </main>
+  <section id="contact">
+    <h2>聯絡我們</h2>
+    <form action="https://formspree.io/f/moqzyjod" method="POST">
+      <label>姓名：<input type="text" name="name" required></label><br/>
+      <label>Email：<input type="email" name="_replyto" required></label><br/>
+      <label>訊息內容：<br/><textarea name="message" rows="5" required></textarea></label><br/>
+      <button type="submit">送出訊息</button>
+    </form>
+  </section>
 
   <div id="cart-modal" class="modal">
     <div class="modal-content">
@@ -105,13 +70,7 @@
   </div>
 
   <footer>
-    <p>© 2025 焱焱國際能源股份有限公司。統編：00071943</p>
+    <p>© 2025 焱焱國際能源股份有限公司．統編：00071943</p>
   </footer>
-
-  <script>
-    particlesJS.load('particles-js', 'assets/particles.json', function() {
-      console.log('particles.js loaded');
-    });
-  </script>
 </body>
 </html>
