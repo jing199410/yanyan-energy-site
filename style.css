@@ -24,6 +24,17 @@ nav a {
   padding: 3rem;
   background-color: #fff0ea;
 }
+.site-header {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+}
+
+.site-logo {
+  width: 48px;
+  height: 48px;
+  margin-right: 1em;
+}
 
 button {
   background: #D07258;
