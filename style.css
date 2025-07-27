@@ -46,23 +46,6 @@ button {
   border-radius: 4px;
 }
 
-.product-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding: 1rem;
-  justify-content: center;
-}
-
-.product {
-  background: #f9f9f9;
-  padding: 1rem;
-  border-radius: 5px;
-  width: 200px;
-  color: #333;
-  box-shadow: 0 0 5px rgba(0,0,0,0.05);
-}
-
 .contact, .checkout, .about {
   padding: 2rem;
   background-color: #fff4f0;
