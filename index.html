@@ -8,6 +8,23 @@
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
 </head>
+  <script>
+  let slideIndex = 0;
+
+  function showSlides() {
+    const slides = document.getElementsByClassName("carousel-slide");
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1; }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 5000); // 每5秒切換一次
+  }
+
+  document.addEventListener("DOMContentLoaded", showSlides);
+</script>
+
 <body>
   <header>
     <h1>焱焱國際能源</h1>
