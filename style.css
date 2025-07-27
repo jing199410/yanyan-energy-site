@@ -234,7 +234,7 @@ input, textarea {
 .product-filter button:hover {
   background-color: #b85a47;
 }
-/*.product {
+.product {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -246,7 +246,7 @@ input, textarea {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   text-align: center;
   transition: transform 0.3s ease;
-}*/
+}
 
 .product h3 {
   min-height: 3em; /* 強制標題佔空間 */
@@ -284,6 +284,7 @@ input, textarea {
   gap: 1.5rem;
   justify-content: center; /* 讓商品居中對齊 */
 }
+/*
 .product {
   width: flex;
   display: flex;
@@ -296,4 +297,4 @@ input, textarea {
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   text-align: center;
-}
+}*/
