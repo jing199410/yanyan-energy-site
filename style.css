@@ -251,3 +251,47 @@ input, textarea {
 .product-filter button:hover {
   background-color: #b85a47;
 }
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 420px; /* 根據實際圖片大小與內文可微調 */
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product h3 {
+  min-height: 3em; /* 強制標題佔空間 */
+  font-size: 1.1rem;
+  margin: 0.5em 0;
+}
+
+.product p {
+  margin: 0.25em 0;
+}
+
+.product button {
+  margin-top: auto;
+  padding: 0.5em 1em;
+  background-color: #006400;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.product img {
+  height: 150px;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
