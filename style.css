@@ -187,7 +187,7 @@ input, textarea {
   color: #D07258;
 }
 
-.product {
+/*.product {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -196,7 +196,7 @@ input, textarea {
 
 .product button {
   margin-top: auto;
-}
+}*/
 
 #floating-cart {
   position: fixed;
