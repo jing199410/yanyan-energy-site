@@ -237,8 +237,7 @@ input, textarea {
 .product {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 200px;
+  justify-content: flex-start; /* 內容從上方開始排列 */
   padding: 1rem;
   border: 1px solid #ddd;
   border-radius: 1rem;
@@ -246,7 +245,9 @@ input, textarea {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   text-align: center;
   transition: transform 0.3s ease;
+  min-height: 350px; /* 統一高度，可視需要調整 */
 }
+
 
 .product h3 {
   min-height: 3em; /* 強制標題佔空間 */
@@ -272,6 +273,8 @@ input, textarea {
   height: 100px;
   object-fit: cover;
   border-radius: 1rem;
+  object-fit: contain; /* 不裁切圖片 */
+  margin-bottom: 0.5rem;
 }
 /*.product-list {
   display: grid;
