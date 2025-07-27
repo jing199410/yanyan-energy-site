@@ -285,7 +285,7 @@ input, textarea {
   justify-content: center; /* 讓商品居中對齊 */
 }
 .product {
-  width: 300px; /* 固定寬度 */
+  width: flex;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
