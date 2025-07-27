@@ -238,7 +238,7 @@ input, textarea {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 420px; /* 根據實際圖片大小與內文可微調 */
+  height: 200px; /* 根據實際圖片大小與內文可微調 */
   padding: 1rem;
   border: 1px solid #ddd;
   border-radius: 1rem;
