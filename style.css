@@ -234,7 +234,7 @@ input, textarea {
 .product-filter button:hover {
   background-color: #b85a47;
 }
-.product {
+/*.product {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -246,7 +246,7 @@ input, textarea {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   text-align: center;
   transition: transform 0.3s ease;
-}
+}*/
 
 .product h3 {
   min-height: 3em; /* 強制標題佔空間 */
@@ -273,8 +273,27 @@ input, textarea {
   object-fit: cover;
   border-radius: 1rem;
 }
-.product-list {
+/*.product-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.5rem;
+}*/
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center; /* 讓商品居中對齊 */
+}
+.product {
+  width: 300px; /* 固定寬度 */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
 }
